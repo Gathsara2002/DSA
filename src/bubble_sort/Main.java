@@ -15,13 +15,13 @@ public class Main {
         }
 
         // Outer loop: One pass for each element
-        // After i iterations, the last i elements are already sorted
         for (int i = 0; i < arr.length; i++) {
 
             // Inner loop: The actual comparison and swapping
             // We stop at (n - 1 - i) because the end is already sorted!
             for (int j = 0; j < arr.length - 1 - i; j++) {
 
+                //Compare adjacent values and swap (if needed)
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
