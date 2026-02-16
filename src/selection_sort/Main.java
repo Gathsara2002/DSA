@@ -18,11 +18,11 @@ public class Main {
             System.out.print(i + " ");
         }
 
-        //passes
+        //passes through unsorted array
         for (int i = 0; i < size - 1; i++) {
             minIndex = i;
 
-            //find minimum index
+            //find minimum value index
             for (int j = i + 1; j < size; j++) {
                 if (arr[minIndex] > arr[j]) {
                     minIndex = j;
