@@ -1,7 +1,5 @@
 package linked_list;
 
-import java.util.ArrayList;
-
 /**
  * @author : Gathsara
  * created : 2/18/2026 -- 7:35 AM
