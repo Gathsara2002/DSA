@@ -28,4 +28,14 @@ public class LinkedListDemo {
             n.next = node;
         }
     }
+
+    public void show() {
+        Node temp = head;
+
+        while (temp.next != null) {
+            System.out.println(temp.data);
+            temp = temp.next;
+        }
+        System.out.println(temp.data);
+    }
 }
