@@ -44,6 +44,7 @@ public class Main {
         list.insertAt(2,10);
         list.insertAt(0,100);
         list.show();
-
+        list.deleteAt(3);
+        list.show();
     }
 }

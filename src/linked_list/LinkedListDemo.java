@@ -57,13 +57,30 @@ public class LinkedListDemo {
 
         if (index == 0) {
             insertAtFirst(num);
-        }
+        } else {
+            for (int i = 0; i < index - 1; i++) {
+                n = n.next;
+            }
 
-        for (int i = 0; i < index - 1; i++) {
-            n = n.next;
+            node.next = n.next;
+            n.next = node;
         }
+    }
 
-        node.next = n.next;
-        n.next = node;
+    public void deleteAt(int index) {
+
+        if (index == 0) {
+            head = head.next;
+        } else {
+            Node n = head;
+            Node temp = null;
+
+            for (int i = 0; i < index - 1; i++) {
+                n = n.next;
+            }
+            temp = n.next;
+            n.next = temp.next;
+            System.out.println(temp.data);
+        }
     }
 }
