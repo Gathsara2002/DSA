@@ -49,4 +49,21 @@ public class LinkedListDemo {
             head = n;
         }
     }
+
+    public void insertAt(int index, int num) {
+        Node node = new Node(num);
+
+        Node n = head;
+
+        if (index == 0) {
+            insertAtFirst(num);
+        }
+
+        for (int i = 0; i < index - 1; i++) {
+            n = n.next;
+        }
+
+        node.next = n.next;
+        n.next = node;
+    }
 }
