@@ -36,5 +36,12 @@ public class Main {
         // "head" is our starting clue.
         // "third.next" is null, which means "The End".
 
+        LinkedListDemo list = new LinkedListDemo();
+        list.insert(3);
+        list.insert(4);
+        list.insert(5);
+        list.insertAtFirst(1);
+        list.show();
+
     }
 }

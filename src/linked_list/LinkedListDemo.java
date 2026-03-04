@@ -38,4 +38,15 @@ public class LinkedListDemo {
         }
         System.out.println(temp.data);
     }
+
+    public void insertAtFirst(int num) {
+        Node n = new Node(num);
+
+        if (head == null) {
+            head = n;
+        } else {
+            n.next = head;
+            head = n;
+        }
+    }
 }
