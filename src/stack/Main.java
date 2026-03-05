@@ -31,5 +31,6 @@ public class Main {
         stackImplOne.show();
         stackImplOne.pop();
         stackImplOne.show();
+        System.out.println(stackImplOne.peek());
     }
 }

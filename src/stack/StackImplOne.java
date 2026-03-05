@@ -26,4 +26,8 @@ public class StackImplOne {
         int data = arr[top];
         arr[top] = 0;
     }
+
+    public int peek() {
+        return arr[top - 1];
+    }
 }
