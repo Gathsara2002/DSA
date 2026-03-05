@@ -14,4 +14,10 @@ public class StackImplOne {
         arr[top] = value;
         top++;
     }
+
+    public void show(){
+        for (int j : arr) {
+            System.out.println(j);
+        }
+    }
 }
