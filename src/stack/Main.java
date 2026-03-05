@@ -34,5 +34,6 @@ public class Main {
         stackImplOne.show();
         System.out.println(stackImplOne.peek());
         System.out.println(stackImplOne.size());
+        System.out.println(stackImplOne.isEmpty());
     }
 }

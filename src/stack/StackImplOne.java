@@ -34,4 +34,8 @@ public class StackImplOne {
     public int size() {
         return top;
     }
+
+    public boolean isEmpty() {
+        return top == 0;
+    }
 }
