@@ -15,9 +15,15 @@ public class StackImplOne {
         top++;
     }
 
-    public void show(){
+    public void show() {
         for (int j : arr) {
             System.out.println(j);
         }
+    }
+
+    public void pop() {
+        top--;
+        int data = arr[top];
+        arr[top] = 0;
     }
 }

@@ -29,5 +29,7 @@ public class Main {
         stackImplOne.push(7);
         stackImplOne.push(8);
         stackImplOne.show();
+        stackImplOne.pop();
+        stackImplOne.show();
     }
 }
