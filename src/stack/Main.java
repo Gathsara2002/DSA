@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         //in built
-        Stack<Integer> stack = new Stack<>();
+       /* Stack<Integer> stack = new Stack<>();
         stack.push(3);
         stack.push(1);
         stack.push(9);
@@ -19,7 +19,7 @@ public class Main {
         stack.push(4);
         System.out.println(stack.peek());   //get last value
         stack.pop();    //remove last value
-        System.out.println(stack);
+        System.out.println(stack);*/
 
         //stack implementation with static array
         StackImplOne stackImplOne = new StackImplOne();
@@ -28,9 +28,11 @@ public class Main {
         stackImplOne.push(6);
         stackImplOne.push(7);
         stackImplOne.push(8);
+        System.out.println(stackImplOne.size());
         stackImplOne.show();
         stackImplOne.pop();
         stackImplOne.show();
         System.out.println(stackImplOne.peek());
+        System.out.println(stackImplOne.size());
     }
 }

@@ -17,7 +17,7 @@ public class StackImplOne {
 
     public void show() {
         for (int j : arr) {
-            System.out.println(j);
+            System.out.print(j + " ");
         }
     }
 
@@ -29,5 +29,9 @@ public class StackImplOne {
 
     public int peek() {
         return arr[top - 1];
+    }
+
+    public int size() {
+        return top;
     }
 }
