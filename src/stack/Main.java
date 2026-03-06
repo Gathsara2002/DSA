@@ -22,7 +22,7 @@ public class Main {
         System.out.println(stack);*/
 
         //stack implementation with static array
-        StackImplOne stackImplOne = new StackImplOne();
+        /*StackImplOne stackImplOne = new StackImplOne();
         stackImplOne.push(4);
         stackImplOne.push(5);
         stackImplOne.push(6);
@@ -34,6 +34,16 @@ public class Main {
         stackImplOne.show();
         System.out.println(stackImplOne.peek());
         System.out.println(stackImplOne.size());
-        System.out.println(stackImplOne.isEmpty());
+        System.out.println(stackImplOne.isEmpty());*/
+
+        //stack implementation with dynamic array
+        StackImplTwo stackImplTwo = new StackImplTwo();
+        stackImplTwo.push(3);
+        stackImplTwo.push(1);
+        stackImplTwo.push(9);
+        stackImplTwo.push(5);
+        stackImplTwo.show();
+        stackImplTwo.push(7);
+        stackImplTwo.show();
     }
 }
