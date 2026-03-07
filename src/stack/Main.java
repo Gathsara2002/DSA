@@ -43,7 +43,13 @@ public class Main {
         stackImplTwo.push(9);
         stackImplTwo.push(5);
         stackImplTwo.show();
+        System.out.println();
         stackImplTwo.push(7);
+        stackImplTwo.show();
+        System.out.println();
+        stackImplTwo.pop();
+        stackImplTwo.pop();
+        stackImplTwo.pop();
         stackImplTwo.show();
     }
 }

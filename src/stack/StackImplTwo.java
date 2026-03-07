@@ -36,6 +36,24 @@ public class StackImplTwo {
         top--;
         int data = arr[top];
         arr[top] = 0;
+        // If the stack is 25% full or less, AND it's bigger than our starting size, HALVE it
+        // Note: top is an index, so the number of elements is top + 1
+        if (capacity > 2 && (top + 1) <= capacity / 4) {
+            resize(capacity / 2);
+        }
+    }
+
+    private void resize(int newCapacity) {
+        System.out.println("Resizing array from " + capacity + " to " + newCapacity);
+        int[] newArr = new int[newCapacity];
+
+        // Copy existing elements to the new array
+        for (int i = 0; i <= top; i++) {
+            newArr[i] = arr[i];
+        }
+
+        arr = newArr; // Swap the old array out for the new one
+        capacity = newCapacity;
     }
 
     public int peek() {
