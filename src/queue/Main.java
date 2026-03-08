@@ -15,5 +15,12 @@ public class Main {
         queue.enqueue(6);
         queue.enqueue(12);
         queue.show();
+        queue.dequeue();
+        queue.show();
+        queue.enqueue(56);
+        queue.show();
+
+        queue.enqueue(80);
+        queue.show();
     }
 }
