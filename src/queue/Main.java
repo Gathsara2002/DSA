@@ -22,5 +22,9 @@ public class Main {
 
         queue.enqueue(80);
         queue.show();
+
+        System.out.println(queue.size);
+        System.out.println(queue.isFul());
+        System.out.println(queue.isEmpty());
     }
 }
