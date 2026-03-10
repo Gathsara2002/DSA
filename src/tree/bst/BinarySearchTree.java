@@ -23,4 +23,16 @@ public class BinarySearchTree {
         }
         return root;
     }
+
+    public void inOrder() {
+        inOrderRec(root);
+    }
+
+    public void inOrderRec(Node root) {
+        if (root != null) {
+            inOrderRec(root.left);
+            System.out.print(root.data + " ");
+            inOrderRec(root.right);
+        }
+    }
 }
